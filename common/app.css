@@ -26,8 +26,8 @@ ul li a {
 }
 
 html {
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji";
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   tab-size: 4;
@@ -180,13 +180,83 @@ fieldset {
 
 .odin--content {
   width: 60vw;
-  padding: 15em 5em 0;
+  background: #f9fafb;
+  padding: 12em 0 0;
+}
+
+.odin--content-header {
+  width: 70ch;
+  padding: 0 0 2em 3em;
+}
+
+.odin--content-header h3:nth-child(2) {
+  margin: 0 0 1em;
+}
+
+.odin--content-form button[type="submit"] {
+  margin: 2em 0 0 3em;
+  background-color: #596d48;
+  border: none;
+  border-radius: 0.5em;
+  text-align: center;
+  color: #ffffff;
+  padding: 1em 3em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 200ms all ease-in-out;
+}
+
+.odin--content-form button[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+.odin--content-form p {
+  margin: 2em 0 0 3em;
+  font-weight: 600;
+}
+
+.odin--content-form p span {
+  color: #596d48;
+  cursor: pointer;
+}
+
+.odin--content-form-container {
+  background: #ffffff;
+  box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  padding: 2em 3em;
+}
+
+.odin--content-form-container h2 {
+  margin: 0 0 1em;
 }
 
 .odin--content-form-items label {
   display: block;
+  color: #1f2937;
+  font-size: 0.7em;
 }
 
-.odin--content-form-container {
+.odin--content-form input {
+  height: 30px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  transition: 200ms all ease-in-out;
+}
+
+.odin--content-form input:focus {
+  outline: 1px solid #1d4ed8;
+  box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.odin--content-form input:invalid {
+  outline: 1px solid #b91c1c;
+}
+
+.odin--content-form-container-content {
   display: flex;
+  gap: 3em;
+}
+
+.form--item-field:nth-child(n + 2) {
+  margin: 2em 0 0;
 }
