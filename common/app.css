@@ -248,7 +248,7 @@ fieldset {
   box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-.odin--content-form input:invalid {
+.odin--content-form input.submitted:invalid {
   outline: 1px solid #b91c1c;
 }
 
@@ -259,4 +259,19 @@ fieldset {
 
 .form--item-field:nth-child(n + 2) {
   margin: 2em 0 0;
+}
+
+.odin--content-form p.validation {
+  display: none;
+  color: red;
+  font-size: 0.7em;
+  margin: 0.5em 0 0;
+}
+
+.odin--content-form p.validation.invalid {
+  display: block;
+}
+
+.odin--content-form p.validation.valid {
+  display: none;
 }
